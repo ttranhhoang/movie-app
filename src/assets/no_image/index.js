@@ -1,0 +1,1 @@
+export {default as no_image} from 'assets/no_image/no_image.png'
