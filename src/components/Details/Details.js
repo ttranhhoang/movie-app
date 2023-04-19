@@ -15,11 +15,11 @@ import BookmarkIcon from "@material-ui/icons/Bookmark";
 import ProgressCircle from "components/ProgressCircle/ProgressCircle";
 import * as moment from "moment";
 import "moment/locale/vi";
-import FastAverageColor from "fast-average-color";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addMovie, removeMovie } from "redux/actions/watchlist";
 import AlertComponent from "components/AlertComponent/AlertComponent";
+import { FastAverageColor } from "fast-average-color";
 
 Details.propTypes = {
   details: PropTypes.object,
@@ -142,7 +142,7 @@ function Details(props) {
             container
             spacing={3}
             alignItems="center"
-            justify="center"
+            justifyContent="center"
             className={classes.grid}
           >
             <Grid item md={3} xs={6}>

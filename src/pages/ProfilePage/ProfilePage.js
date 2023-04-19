@@ -51,7 +51,7 @@ function ProfilePage() {
               container
               spacing={3}
               direction="row"
-              justify="space-between"
+              justifyContent="space-between"
               alignItems="center"
             >
               <TabsProfile

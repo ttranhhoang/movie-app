@@ -88,7 +88,11 @@ function App() {
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/signup" component={SignUpPage} />
                 <PrivateRoute exact path="/profile" component={ProfilePage} />
-                <PrivateRoute exact path="/setting" component={SettingProfilePage}/>
+                <PrivateRoute
+                  exact
+                  path="/setting"
+                  component={SettingProfilePage}
+                />
               </Switch>
             </main>
             <Footer />

@@ -12,7 +12,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateUser, logout } from "redux/actions/user";
 import { useHistory } from "react-router-dom";
 
-
 const useStyles = makeStyles((theme) => ({
   container: {
     paddingTop: "6rem",
@@ -41,7 +40,7 @@ function SettingProfilePage(props) {
 
   const onSubmit = async (data) => {
     try {
-      await dispatch(updateUser(data));
+      dispatch(updateUser(data));
       if (!error) {
         setOpen(true);
       }
@@ -64,7 +63,7 @@ function SettingProfilePage(props) {
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={3}
         >
