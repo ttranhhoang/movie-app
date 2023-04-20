@@ -117,7 +117,9 @@ function Details(props) {
   }, [matches]);
 
   useEffect(() => {
-    facColor();
+    setTimeout(() => {
+      facColor();
+    }, 500);
   }, [facColor]);
 
   // chuyển đổi Object thành Array để dùng Array method
@@ -149,6 +151,7 @@ function Details(props) {
               <CardMedia
                 className="detailsImg"
                 component="img"
+                
                 image={details.poster_path}
                 alt={details.title}
                 title={details.title}

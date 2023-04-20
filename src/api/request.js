@@ -2,7 +2,7 @@ import axiosClient from "./axios";
 import { API_KEY } from "./constants";
 const request = {
   fetchMovies: (movie_id) => {
-    const url_movies = `/movie/${movie_id}?api_key=${API_KEY}&language=vi&append_to_response=release_dates,credits,videos,recommendations,keywords`;
+    const url_movies = `/movie/${movie_id}?api_key=${API_KEY}&language=vi&append_to_response=release_dates,credits,videos,recommendations,keywords,images&include_image_language=vi`;
     return axiosClient.get(url_movies);
   },
   fetchTv: (tv_id) => {

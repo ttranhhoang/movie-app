@@ -29,11 +29,11 @@ function TvDetails(props) {
         backdrop_path:
           respone.backdrop_path === null
             ? ""
-            : Images.baseurl_IMG + respone.backdrop_path,
+            : Images.baseurl_IMG_DETAILS + respone.backdrop_path,
         poster_path:
           respone.poster_path === null
             ? ""
-            : Images.baseurl_IMG + respone.poster_path,
+            : Images.baseurl_IMG_DETAILS + respone.poster_path,
         runtime: respone.episode_run_time[0],
         release_dates: respone.content_ratings.results[0]
           ? {
@@ -48,7 +48,7 @@ function TvDetails(props) {
           ? {
               ...respone.networks[0],
               logo_path: respone.networks[0].logo_path
-                ? Images.baseurl_IMG + respone.networks[0].logo_path
+                ? Images.baseurl_IMG_DETAILS + respone.networks[0].logo_path
                 : "",
             }
           : {},
@@ -56,14 +56,14 @@ function TvDetails(props) {
           (recommendation) => ({
             ...recommendation,
             poster_path: recommendation.poster_path
-              ? Images.baseurl_IMG + recommendation.poster_path
+              ? Images.baseurl_IMG_DETAILS + recommendation.poster_path
               : no_image,
           })
         ),
         seasons: respone.seasons.map((season) => ({
           ...season,
           poster_path: season.poster_path
-            ? Images.baseurl_IMG + season.poster_path
+            ? Images.baseurl_IMG_DETAILS + season.poster_path
             : no_image,
         })),
         videos: respone.videos.results[0]

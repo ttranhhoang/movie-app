@@ -36,11 +36,11 @@ function MovieDetails(props) {
           backdrop_path:
             respone.backdrop_path === null
               ? ""
-              : Images.baseurl_IMG + respone.backdrop_path,
+              : Images.baseurl_IMG_DETAILS + respone.backdrop_path,
           poster_path:
             respone.poster_path === null
               ? ""
-              : Images.baseurl_IMG + respone.poster_path,
+              : Images.baseurl_IMG_DETAILS + respone.poster_path,
           release_dates: respone.release_dates.results[0]
             ? {
                 certification:
@@ -55,7 +55,7 @@ function MovieDetails(props) {
           recommendations: respone.recommendations.results.map((recomment) => ({
             ...recomment,
             poster_path: recomment.poster_path
-              ? Images.baseurl_IMG + recomment.poster_path
+              ? Images.baseurl_IMG_DETAILS + recomment.poster_path
               : no_image,
           })),
           videos: respone.videos.results[0]

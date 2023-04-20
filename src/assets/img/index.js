@@ -1,5 +1,6 @@
 const Images = {
   baseurl_IMG: "https://image.tmdb.org/t/p/original",
+  baseurl_IMG_DETAILS: "https://image.tmdb.org/t/p/w300_and_h450_bestv2",
   backgroundHeader:
     "https://www.themoviedb.org/assets/2/v4/account_pipes/light_blue-a230b623827400e967c6eb7241d88086f2eb9264c0789d0dab15ae6f1df1421a.svg",
   logoHeader:
